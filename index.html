@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Gmail clone</title>
+  </head>
+  <body>
+    <nav class="topNavbar">
+      <input class="searchInput" type="text" placeholder="Search mail" />
+      <div class="searchSection">
+        <div class="searchIcons">
+          <i class="fa-solid fa-magnifying-glass fa-sm"></i>
+          <i class="fa-solid fa-sliders fa-lg"></i>
+        </div>
+      </div>
+      <div class="topNavRight">
+        <i
+          class="fa-regular fa-circle-question fa-lg"
+          style="color: #444444"
+        ></i>
+        <i class="fa-solid fa-gear fa-lg" style="color: #454546"></i>
+        <img
+          style="width: 20px; height: 20px"
+          src="https://cdn4.iconfinder.com/data/icons/fluent-solid-20px-vol-4/20/ic_fluent_grid_dots_20_filled-512.png"
+          alt=""
+        />
+        <img
+          style="width: 30px; height: 30px; border-radius: 50%"
+          src="https://lh3.googleusercontent.com/ogw/AOLn63HW1yHgNC70DVjO6zfL8mffPLGZ1S2cDplG2HfE5A=s32-c-mo"
+          alt=""
+        />
+      </div>
+    </nav>
+    <div class="leftSidebar">
+      <div class="hamburger"><i class="fa-solid fa-bars fa-lg"></i></div>
+      <div class="gmailLogo">
+        <img
+          src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r5.png"
+          alt=""
+        />
+      </div>
+      <div class="composeBtn">
+        <i class="fa-solid fa-pencil"></i>
+        <p>Compose</p>
+      </div>
+      <div class="leftsidebarUtilities">
+        <div class="leftUtilities" style="background-color: rgb(201, 219, 248)">
+          <i class="fa-solid fa-inbox"></i>
+          <p>Inbox</p>
+          <span>7,358</span>
+        </div>
+        <div class="leftUtilities">
+          <i class="fa-regular fa-star" style="color: #949494"></i>
+          <p>Starred</p>
+        </div>
+        <div class="leftUtilities">
+          <i class="fa-regular fa-clock" style="color: #949494"></i>
+          <p>Snoozed</p>
+        </div>
+        <div class="leftUtilities">
+          <i class="fa-solid fa-paper-plane" style="color: #949494"></i>
+          <p>Sent</p>
+        </div>
+        <div class="leftUtilities">
+          <i class="fa-regular fa-file" style="color: #949494"></i>
+          <p>Drafts</p>
+          <span>40</span>
+        </div>
+        <div class="leftUtilities">
+          <i class="fa-solid fa-chevron-down" style="color: #949494"></i>
+          <p>More</p>
+        </div>
+        <div class="labels">
+          <p>Labels</p>
+          <i class="fa-solid fa-plus" style="color: #949494"></i>
+        </div>
+      </div>
+      <div class="labels"></div>
+    </div>
+
+    <div class="rightSidebar">
+      <img
+        src="	https://www.gstatic.com/companion/icon_assets/calendar_2020q4_2x.png"
+        alt=""
+      />
+      <img
+        src="https://www.gstatic.com/companion/icon_assets/keep_2020q4v3_2x.png"
+        alt=""
+      />
+      <img
+        src="https://www.gstatic.com/companion/icon_assets/tasks_2021_2x.png"
+        alt=""
+      />
+      <img
+        src="	https://www.gstatic.com/companion/icon_assets/contacts_2022_2x.png"
+        alt=""
+      />
+      <br /><br />
+      <img
+        src="	https://fonts.gstatic.com/s/i/googlematerialicons/add/v21/black-24dp/1x/gm_add_black_24dp.png"
+        alt=""
+      />
+    </div>
+
+    <main class="main">
+      <div class="mainTopBar">
+        <div class="mainTopbar1">
+          <div>
+            <img
+              src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+              alt=""
+            />
+            <img
+              src="	https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/arrow_drop_down_baseline_nv700_20dp.png"
+              alt=""
+            />
+          </div>
+          <i class="fa-solid fa-rotate-right" style="color: #5d5d5d"></i>
+          <i class="fa-solid fa-ellipsis-vertical" style="color: #565656"></i>
+        </div>
+        <div class="mainTopBar2">
+          <p>1-50 of 5035</p>
+
+          <i class="fa-solid fa-angle-left" style="color: #b0b0b0"></i>
+          <i class="fa-solid fa-angle-right" style="color: #616161"></i>
+        </div>
+      </div>
+      <div class="secondTopBar">
+        <div class="mainPrimary">
+          <div class="primary">
+            <img
+              src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/inbox_fill_baseline_p900_20dp.png"
+              alt=""
+            />
+            <p>Primary</p>
+          </div>
+          <div class="underLine"></div>
+        </div>
+        <div class="mainPromotions">
+          <img
+            class="promoIcon"
+            src="	https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/sell_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <div class="promotions">
+            <div class="promotionTop">
+              <p>Promotions</p>
+              <p class="newGreen">50 new</p>
+            </div>
+            <p class="bottomText">OneScore, Naukri, Nippon ...</p>
+          </div>
+        </div>
+
+        <div class="mainPromotions">
+          <img
+            class="promoIcon"
+            src="		https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/group_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <div class="promotions">
+            <div class="promotionTop">
+              <p>Social</p>
+              <p class="newBlue">48 new</p>
+            </div>
+            <p class="bottomText">Linkedin, Instagra, Meta...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mainEmail">
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+        <div class="email">
+          <img
+            src="https://ssl.gstatic.com/ui/v1/icons/mail/gm3/1x/check_box_outline_blank_baseline_nv700_20dp.png"
+            alt=""
+          />
+          <i class="fa-regular fa-star"></i>
+          <p>George jose</p>
+          <div class="emailDesc">
+            <p>your weekly interview topic for product companies -</p>
+            <p class="emailDescPara">don't want to reach out? please click here!</p>
+          </div>
+          <p>11.26 PM</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
